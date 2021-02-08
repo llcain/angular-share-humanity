@@ -1,12 +1,10 @@
 .footer {
-  min-height: 8vh;
-  padding: 30px;
   color: rgb(226, 226, 226);
+  /* width: 100vh; */
+  padding: 30px;
   text-transform: uppercase;
+  background-color: #5d4954;
   letter-spacing: 5px;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  background-color: #5d4954;
-  display: flex;
-  align-items: center;
+  font-family: "Poppings", sans-serif;
 }

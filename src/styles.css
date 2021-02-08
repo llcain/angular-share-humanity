@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(145, 132, 145);
+}
+
+.container-1 div,
+.container-2 div {
+  border: 3px rgb(248, 246, 246) solid;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+
+.box-1 {
+  flex: 4;
+  order: 2;
+}
+
+.box-2 {
+  flex: 1;
+  order: 1;
+}
+
+.container-2-box {
+  flex-basis: 20%;
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@500&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: #5d4954;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hachi Maru Pop", cursive;
 }
 
 .logo {
@@ -41,9 +41,33 @@ nav {
   font-size: 14px;
 }
 
+.hamburger {
+  display: none;
+}
+
 .hamburger div {
   width: 25px;
   height: 3px;
   background-color: rgb(211, 30, 30);
   margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
 }

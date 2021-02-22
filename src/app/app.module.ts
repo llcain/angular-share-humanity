@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,7 +19,10 @@ import { HumanitarianIssuesComponent } from './components/humanitarian-issues/hu
     HumanitarianIssuesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

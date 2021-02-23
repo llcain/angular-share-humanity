@@ -1,25 +1,26 @@
-<mat-toolbar>My App</mat-toolbar>
-<nav>
-  <div class="logo">
-    <h4>Humanitarian Crisis in Nigeria</h4>
-  </div>
-  <ul class="nav-links">
-    <li>
-      <a href="#">Home</a>
-    </li>
-    <li>
-      <a href="#">About</a>
-    </li>
-    <li>
-      <a href="#">Humanitarian Help</a>
-    </li>
-    <li>
-      <a href="#">Contact</a>
-    </li>
-  </ul>
-  <div (change)="(navSlide)" class="hamburger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-</nav>
+<mat-toolbar>
+  <nav>
+    <span class="logo">
+      <h4>Humanitarian Crisis in Nigeria</h4>
+    </span>
+    <ul class="nav-links">
+      <li>
+        <a mat-button href="#">Home</a>
+      </li>
+      <li>
+        <a mat-button href="#">About</a>
+      </li>
+      <li>
+        <a mat-button href="#">Humanitarian Help</a>
+      </li>
+      <li>
+        <a mat-button href="#">Contact</a>
+      </li>
+    </ul>
+    <div (change)="(navSlide)" class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+</mat-toolbar>

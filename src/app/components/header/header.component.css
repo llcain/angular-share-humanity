@@ -11,6 +11,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
+  min-width: none;
   background-color: #5d4954;
   font-family: "Hachi Maru Pop", cursive;
 }

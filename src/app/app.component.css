@@ -1,1 +1,13 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mad-sidenav {
+  height: 100%;
+}
 
+mat-sidnav {
+  width: 250px;
+}
+
+app-header {
+  padding: 10px;
+}

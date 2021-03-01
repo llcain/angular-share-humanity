@@ -2,7 +2,17 @@
 /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@500&display=swap");
 
-* {
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,4 +55,4 @@ body {
   background-color: rgb(226, 226, 226);
   margin: 5px;
   transition: all 0.3s ease;
-}
+} */

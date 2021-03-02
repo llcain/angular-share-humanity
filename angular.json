@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "angular-share-humanity"
+  "defaultProject": "angular-share-humanity",
+  "cli": {
+    "analytics": false
+  }
 }

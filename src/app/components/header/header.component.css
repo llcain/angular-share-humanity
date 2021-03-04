@@ -1,6 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@500&display=swap");
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,14 +27,28 @@ nav {
   font-size: 20px;
 }
 
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100%;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
+mat-sidenav {
+  width: 250px;
+}
+
 .nav-links li {
   list-style: none;
+}
+
+main {
+  padding: 10px;
 }
 
 .nav-links a {
@@ -86,7 +100,7 @@ nav {
   .hamburger {
     display: block;
   }
-} */
+}
 
 a {
   text-decoration: none;
@@ -114,6 +128,6 @@ mat-toolbar {
   }
 }
 
-/* .nav-active {
+.nav-active {
   transform: translateX(0%);
-} */
+}

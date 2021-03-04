@@ -12,6 +12,10 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { HumanitarianIssuesComponent } from './components/humanitarian-issues/humanitarian-issues.component';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
+import { RouterModule } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { RoutingModule } from './routing/routing.module';
 
 
 
@@ -30,7 +34,11 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
     // MatCheckboxModule,
     MatToolbarModule,
     MatButtonModule,
-    AppMaterialModule
+    AppMaterialModule,
+    RoutingModule,
+    RouterModule,
+    MatIconModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<mat-nav-list>
+<mat-list>
   <a mat-list-item routerLink="/home" (click)="onSlidenavClose()">
     <mat-icon>Home</mat-icon><span class="nav-caption">Home</span>
   </a>
@@ -11,4 +11,6 @@
   <a mat-list-item routerLink="/contact" (click)="onSlidenavClose()">
     <mat-icon>account_balance</mat-icon>
   </a>
-</mat-nav-list>
+</mat-list>
+
+<router-outlet></router-outlet>

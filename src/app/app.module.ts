@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-// import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import { MatTabsModule } from '@angular/material/tabs';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,6 +14,7 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 import { RoutingModule } from './routing/routing.module';
 
 
@@ -31,14 +31,22 @@ import { RoutingModule } from './routing/routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    // MatCheckboxModule,
     MatToolbarModule,
     MatButtonModule,
     AppMaterialModule,
     RoutingModule,
     RouterModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
+  ],
+  exports: [
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

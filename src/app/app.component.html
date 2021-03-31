@@ -1,14 +1,14 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav role="navigation">
-    <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <!-- <mat-checkbox>Subscribe to newsletter</mat-checkbox> -->
-    <app-header (sidenavToggle)="sidenav.toggle()">
-      <router-outlet></router-outlet>
-    </app-header>
-    <!-- <app-home></app-home>
-<app-humanitarian-issues></app-humanitarian-issues>
-<app-footer></app-footer> -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<div>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-header (sidenavToggle)="sidenav.toggle()">
+        <router-outlet></router-outlet>
+      </app-header>
+      <app-home></app-home>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

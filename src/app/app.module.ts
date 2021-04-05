@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-import { MatTabsModule } from '@angular/material/tabs';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -26,7 +26,7 @@ import { RoutingModule } from './routing/routing.module';
     FooterComponent,
     HomeComponent,
     HumanitarianIssuesComponent,
-    SidenavListComponent
+    SidenavListComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +41,6 @@ import { RoutingModule } from './routing/routing.module';
     MatListModule
   ],
   exports: [
-    MatTabsModule,
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,

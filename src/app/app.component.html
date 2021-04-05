@@ -5,10 +5,12 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <app-header (sidenavToggle)="sidenav.toggle()">
-        <router-outlet></router-outlet>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
       </app-header>
-      <app-home></app-home>
-      <app-footer></app-footer>
+      <!-- <app-home></app-home>
+      <app-footer></app-footer> -->
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

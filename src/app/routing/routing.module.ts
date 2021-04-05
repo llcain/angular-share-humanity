@@ -5,7 +5,6 @@ import { HeaderComponent } from '../components/header/header.component';
 import { HomeComponent } from '../components/pages/home/home.component';
 
 const routes: Routes = [
-  { path: 'header', component: HeaderComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

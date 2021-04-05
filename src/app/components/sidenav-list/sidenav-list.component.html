@@ -1,43 +1,13 @@
-<!-- <mat-sidenav-container class="example-container *ngIf="shouldRun">
-  <mat-sidnav #sidenav mode="side" [(opend)]="opened" (open)="event.push('open!)" (closed)="events.push('close!')">
-    <a mat-list-item routerLink="/home" (click)="onSlidenavClose()">
-      <mat-icon>Home</mat-icon><span class="nav-caption">Home</span>
-    </a>
-    <a mat-list-item routerLink="/about" (click)="onSlidenavClose()">
-      <mat-icon>assignment_ind</mat-icon>
-    </a>
-    <a mat-list-item routerLink="/humanitarianhelp" (click)="onSlidenavClose()">
-      <mat-icon>account_balance</mat-icon>
-    </a>
-    <a mat-list-item routerLink="/contact" (click)="onSlidenavClose()">
-      <mat-icon>account_balance</mat-icon>
-    </a>
-  </mat-sidnav>
-
-  <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
-    <p>Events:</p>
-    <div class="example-events">
-      <div *ngFor="let e of events">{{e}}</div>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
-<div *ngIf="!shouldRun">Please open on Stackblitz to see result</div> -->
-<!-- <mat-list>
+<mat-nav-list>
   <a mat-list-item routerLink="/home" (click)="onSlidenavClose()">
     <mat-icon>Home</mat-icon><span class="nav-caption">Home</span>
   </a>
-  <a mat-list-item routerLink="/about" (click)="onSlidenavClose()">
-    <mat-icon>assignment_ind</mat-icon>
+  <a mat-list-item routerLink="/owner" (click)="onSlidenavClose()">
+    <mat-icon>assignment_ind</mat-icon
+    ><span class="nav-caption">Owner Actions</span>
   </a>
-  <a mat-list-item routerLink="/humanitarianhelp" (click)="onSlidenavClose()">
-    <mat-icon>account_balance</mat-icon>
+  <a mat-list-item routerLink="#" (click)="onSlidenavClose()">
+    <mat-icon>account_balance</mat-icon
+    ><span class="nav-caption">Account Actions</span>
   </a>
-  <a mat-list-item routerLink="/contact" (click)="onSlidenavClose()">
-    <mat-icon>account_balance</mat-icon>
-  </a>
-</mat-list> -->
-
-<router-outlet></router-outlet>
+</mat-nav-list>

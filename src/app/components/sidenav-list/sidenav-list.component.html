@@ -2,12 +2,14 @@
   <a mat-list-item routerLink="/home" (click)="onSlidenavClose()">
     <mat-icon>Home</mat-icon><span class="nav-caption">Home</span>
   </a>
-  <a mat-list-item routerLink="/owner" (click)="onSlidenavClose()">
-    <mat-icon>assignment_ind</mat-icon
-    ><span class="nav-caption">Owner Actions</span>
+  <a mat-list-item routerLink="/about" (click)="onSlidenavClose()">
+    <mat-icon>person</mat-icon><span class="nav-caption">About</span>
   </a>
-  <a mat-list-item routerLink="#" (click)="onSlidenavClose()">
-    <mat-icon>account_balance</mat-icon
-    ><span class="nav-caption">Account Actions</span>
+  <a mat-list-item routerLink="/humanitarianhelp" (click)="onSlidenavClose()">
+    <mat-icon>info</mat-icon><span class="nav-caption">Humanitarian Help</span>
+  </a>
+  <a mat-list-item routerLink="/contact" (click)="onSlidenavClose()">
+    <mat-icon>contact_page</mat-icon><span class="nav-caption">Contact</span>
   </a>
 </mat-nav-list>
+<router-outlet></router-outlet>

@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -8,7 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
-import {HomeComponent} from './components/pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import {HumanitarianIssuesComponent} from './components/humanitarian-issues/humanitarian-issues.component';
 import {AppMaterialModule} from './app-material/app-material.module';
 import {SidenavListComponent} from './components/sidenav-list/sidenav-list.component';
@@ -16,14 +18,15 @@ import {RouterModule} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
-import {RoutingModule} from './routing/routing.module';
+import { RoutingModule } from './routing/routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    AboutComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
     HumanitarianIssuesComponent,
     SidenavListComponent,
   ],
@@ -31,7 +34,7 @@ import {RoutingModule} from './routing/routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppMaterialModule,
-    RoutingModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

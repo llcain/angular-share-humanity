@@ -1,13 +1,13 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="nav">
   <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
+      <mat-icon class="burger">menu</mat-icon>
     </button>
   </div>
-  <div>
-    <a routerLink="/home">Owner-Accounts</a>
+  <div class="logo">
+    <h1>Humanitarian Crisis in Nigeria</h1>
   </div>
-  <div fxFlex fxLayoutAlign="end end" fxHide.xs>
+  <div class="nav-links" fxFlex fxLayoutAlign="end end" fxHide.xs>
     <a mat-button routerLink="/home">Home</a>
 
     <a mat-button routerLink="/about">About</a>
@@ -17,3 +17,4 @@
     <a mat-button routerLink="/contact">Contact</a>
   </div>
 </mat-toolbar>
+<router-outet></router-outet>

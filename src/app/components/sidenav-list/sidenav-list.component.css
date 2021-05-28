@@ -23,7 +23,12 @@ a:action {
   color: lightgray;
 }
 
+.nav-list {
+  background-color: indigo;
+}
+
 .nav-caption {
   display: inline-block;
   padding-left: 6px;
+  background-color: hotpink;
 }

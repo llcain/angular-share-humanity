@@ -1,0 +1,21 @@
+.container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "photo summary";
+  background-color: rgb(145, 132, 145);
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.summary {
+  grid-area: summary;
+
+  padding: 2px;
+}
+
+.summary h2 {
+  text-align: center;
+  font-size: 3rem;
+}
